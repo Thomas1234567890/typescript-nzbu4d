@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2084.617" height="1040.904" viewBox="0 0 2084.617 1040.904">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#001a6e"/>
+      <stop offset="1" stop-color="#8d00d2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00165b"/>
+      <stop offset="1" stop-color="#a700ff"/>
+      <stop offset="1" stop-color="#69009c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00165b"/>
+      <stop offset="1" stop-color="#9f0070"/>
+      <stop offset="1" stop-color="#69009c"/>
+    </linearGradient>
+  </defs>
+  <g id="background_mobile" transform="translate(-7950.691 -1159.5)">
+    <path id="Path_16" data-name="Path 16" class="cls-1" d="M1976.069,565.8c392.5-86.655,586.534,24.382,897.642,0s355.625-77.65,415.263-40.779S3498.645,748.969,3615.884,698s110.782-210.35,229.72-234.138,174.5,46.386,174.5,46.386l-42.478,662.145H1945.485V565.8Z" transform="translate(6015.206 700.563)"/>
+    <path id="Path_15" data-name="Path 15" class="cls-2" d="M1976.069,565.8c392.5-86.655,586.534,24.382,897.642,0s355.625-77.65,415.263-40.779S3498.645,748.969,3615.884,698s110.782-210.35,229.72-234.138,174.5,46.386,174.5,46.386l-42.478,662.145H1945.485V565.8Z" transform="translate(6005.206 880.5)"/>
+    <path id="Path_14" data-name="Path 14" class="cls-3" d="M1976.069,565.8c392.5-86.655,586.534,24.382,897.642,0s355.625-77.65,415.263-40.779S3498.645,748.969,3615.884,698s110.782-210.35,229.72-234.138,174.5,46.386,174.5,46.386l-42.478,662.145H1945.485V565.8Z" transform="translate(6005.206 1028.015)"/>
+  </g>
+</svg>
