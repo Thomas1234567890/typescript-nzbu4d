@@ -1,5 +1,59 @@
-svg
-{
-  width: auto;
+// .background {
+//   background-image: url("https://raw.githubusercontent.com/Thomas1234567890/typescript-nzbu4d/86e6375b67346f88be3c24398f9eff898de61ba8/style/background_mobile.svg");
+//   width: 100vw;
+//   height: 100vh;
+//   /* Background image is centered vertically and horizontally at all times */
+//   background-position: center center;
+
+//   /* Background image doesn’t tile */
+//   background-repeat: no-repeat;
+
+//   /* Background image is fixed in the viewport so that it doesn’t move when
+// the content’s height is greater than the image’s height */
+//   background-attachment: fixed;
+
+//   /* This is what makes the background image rescale based
+// on the container’s size */
+//   background-size: cover;
+
+//   /* Set a background color that will be displayed
+// while the background image is loading */
+//   background-color: #000;
+// }
+
+///mobile
+@import "./_variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  width: 100vw;
   height: 100vh;
+  // background-color: $background_color;
+  // color: $color;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading
+{
+  margin:  125px 0 0 35px;
+
+  & .title, & .contact
+  {
+    font-size: 16px;
+  }
+
+  & .name
+  {
+    font-size: 24px;
+  }
+& .title, & .contact, & .name
+{
+  
+}
+  & .icon
+  {
+  }
 }
