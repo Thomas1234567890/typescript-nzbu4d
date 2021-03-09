@@ -1,4 +1,3 @@
-///mobile
 @import "./_variables";
 
 * {
@@ -6,45 +5,47 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/// mobile first ///////////////////////////////////////////////////////
 body {
   background-color: $background_color;
   color: $color;
   font-family: "Montserrat", sans-serif;
-  display: $body_display;
-  flex-direction: $body_flex_direction;
-  align-items: $body_align_items;
+  display: $body_display_mobile;
+  flex-direction: $body_flex_direction_mobile;
+  align-items: $body_align_items_mobile;
 
-  background-image: $background_image;
+  background-image: $background_image_mobile;
   background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
 }
 
 .heading {
-  margin: $heading_margin;
+  margin: $heading_margin_mobile;
   & .title,
   & .contact {
-    font-size: $heading_text;
-    color: $heading_text_color;
+    font-size: $heading_text_mobile;
+    color: $heading_text_color_mobile;
   }
 
   & .name {
-    font-size: $heading_header;
+    font-size: $heading_header_mobile;
   }
   & .icon {
-    float: $icon_float;
-    transform: $icon_transform;
+    float: $icon_float_mobile;
+    transform: $icon_transform_mobile;
   }
 }
 
 .card_list {
-  margin: $card_list_margin;
+  margin: $card_list_margin_mobile;
 }
 .card {
-  height: $card_height;
-  width: $card_width;
-  margin: $card_margin;
-  padding: $card_padding;
+  height: $card_height_mobile;
+  width: $card_width_mobile;
+  margin: $card_margin_mobile;
+  padding: $card_padding_mobile;
 
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -58,12 +59,74 @@ body {
   }
 
   & .title a {
-    font-size: $card_title;
-    padding: $card_heading_padding;
+    font-size: $card_title_mobile;
+    padding: $card_heading_padding_mobile;
     color: #fff;
   }
   & .text {
-    font-size: $card_text;
-    margin: $card_text_margin;
+    font-size: $card_text_mobile;
+    margin: $card_text_margin_mobile;
+  }
+}
+/// desktop ///////////////////////////////////////////////////////
+//where the fun begins , added fade in and motions
+@media only screen and (min-width: 900px) {
+  body {
+    display: $body_display_desktop;
+    flex-direction: $body_flex_direction_desktop;
+    align-items: $body_align_items_desktop;
+
+    background-image: $background_image_desktop;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+
+  .heading {
+    margin: $heading_margin_desktop;
+    & .title,
+    & .contact {
+      font-size: $heading_text_desktop;
+      color: $heading_text_color_desktop;
+    }
+
+    & .name {
+      font-size: $heading_header_desktop;
+    }
+    & .icon {
+      float: $icon_float_desktop;
+      transform: $icon_transform_desktop;
+    }
+  }
+
+  .card_list {
+    margin: $card_list_margin_desktop;
+  }
+  .card {
+    height: $card_height_desktop;
+    width: $card_width_desktop;
+    margin: $card_margin_desktop;
+    padding: $card_padding_desktop;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    &:hover {
+      border: solid 1px rgba(255, 255, 255, 0.5);
+    }
+
+    & .title a {
+      font-size: $card_title_desktop;
+      padding: $card_heading_padding_desktop;
+      color: #fff;
+    }
+    & .text {
+      font-size: $card_text_desktop;
+      margin: $card_text_margin_desktop;
+    }
   }
 }
