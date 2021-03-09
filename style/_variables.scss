@@ -1,2 +1,28 @@
 $background_color: #000;
 $color: #fff;
+
+////mobile
+
+$body_display: flex;
+$body_flex_direction: column;
+$body_align_items: center;
+
+// margin: 125px 0 0 35px;
+$heading_margin: 125px 0 0 0;
+$heading_header: 24px;
+$heading_text: 16px;
+$heading_text_color: rgba(255, 255, 255, 0.5);
+$icon_float: right;
+$icon_transform: translate(25%, -100%);
+
+$card_list_margin: 100px 0 35px 0;
+
+$card_title: 24px;
+$card_text: 16px;
+$card_height: 238px;
+$card_width: 304px;
+$card_margin: 0 0 0 0;
+$card_padding: 0 0 0 0;
+$card_heading_padding: 40px 0 0 20px;
+$card_text_padding: 10px 0 0 20px;
+
