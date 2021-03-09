@@ -9,7 +9,7 @@ $body_align_items: center;
 $background_image: url(https://raw.githubusercontent.com/Thomas1234567890/typescript-nzbu4d/7f1e6272eafcd4592d1c96d44f4f82f36f0867b9/style/mobile_background_image.svg);
 
 // margin: 125px 0 0 35px;
-$heading_margin: 125px 0 0 0;
+$heading_margin: 50px 0 0 0;
 $heading_header: 24px;
 $heading_text: 16px;
 $heading_text_color: rgba(255, 255, 255, 0.5);
@@ -22,7 +22,8 @@ $card_title: 24px;
 $card_text: 16px;
 $card_height: 238px;
 $card_width: 304px;
-$card_margin: 0 0 0 0;
+$card_margin: 0 0 20px 0;
 $card_padding: 0 0 0 0;
 $card_heading_padding: 40px 0 0 20px;
 $card_text_padding: 10px 0 0 20px;
+$card_text_margin: 10px 20px 0 20px;

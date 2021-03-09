@@ -21,7 +21,6 @@ body {
 }
 
 .heading {
-  // margin: 125px 0 0 35px;
   margin: $heading_margin;
   & .title,
   & .contact {
@@ -42,31 +41,29 @@ body {
   margin: $card_list_margin;
 }
 .card {
-  border: solid 1px red;
   height: $card_height;
   width: $card_width;
   margin: $card_margin;
   padding: $card_padding;
 
-  & .title {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &:hover {
+    border: solid 1px rgba(255, 255, 255, 0.5);
+  }
+
+  & .title a {
     font-size: $card_title;
     padding: $card_heading_padding;
+    color: #fff;
   }
   & .text {
     font-size: $card_text;
-    padding: $card_text_padding;
+    margin: $card_text_margin;
   }
 }
-
-// .background_image {
-//   z-index: -3;
-//   & img {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: fit-content;
-//     width: fit-content;
-//   //   width: "2084.618";
-//   //   height: "1040.904";
-//   }
-// }
