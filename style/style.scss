@@ -4,6 +4,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: $background_color;
@@ -12,6 +13,11 @@ body {
   display: $body_display;
   flex-direction: $body_flex_direction;
   align-items: $body_align_items;
+
+  background-image: $background_image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .heading {
@@ -51,3 +57,16 @@ body {
     padding: $card_text_padding;
   }
 }
+
+// .background_image {
+//   z-index: -3;
+//   & img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: fit-content;
+//     width: fit-content;
+//   //   width: "2084.618";
+//   //   height: "1040.904";
+//   }
+// }
