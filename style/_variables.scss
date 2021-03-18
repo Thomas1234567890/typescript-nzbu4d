@@ -17,6 +17,9 @@ $icon_float_mobile: right;
 $icon_transform_mobile: translate(25%, -100%);
 
 $card_list_margin_mobile: 100px 0 35px 0;
+$card_list_display_mobile: flex;
+$card_flex_direction_mobile: column;
+$card_align_items_mobile: center;
 
 $card_title_mobile: 24px;
 $card_text_mobile: 16px;
@@ -30,10 +33,10 @@ $card_text_margin_mobile: 10px 20px 0 20px;
 
 /// desktop overlords
 
-$body_display_desktop: flex;
-$body_flex_direction_desktop: column;
-$body_align_items_desktop: center;
-$background_image_desktop: url(https://raw.githubusercontent.com/Thomas1234567890/typescript-nzbu4d/7f1e6272eafcd4592d1c96d44f4f82f36f0867b9/style/mobile_background_image.svg);
+// $body_display_desktop: flex;
+// $body_flex_direction_desktop: column;
+// $body_align_items_desktop: center;
+$background_image_desktop: url(https://raw.githubusercontent.com/Thomas1234567890/typescript-nzbu4d/69f5b378fab903413115233851d2d201c37ca16d/style/background_image.svg);
 
 // margin_desktop : 125px 0 0 35px;
 $heading_margin_desktop: 50px 0 0 0;
@@ -44,6 +47,9 @@ $icon_float_desktop: right;
 $icon_transform_desktop: translate(25%, -100%);
 
 $card_list_margin_desktop: 100px 0 35px 0;
+$card_list_display_desktop: flex;
+$card_flex_direction_desktop: row;
+$card_align_items_desktop: center;
 
 $card_title_desktop: 24px;
 $card_text_desktop: 16px;

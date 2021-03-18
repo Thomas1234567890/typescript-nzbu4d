@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/// mobile first ///////////////////////////////////////////////////////
+/// mobile first///////////////////////////////////////////////////////
 body {
   background-color: $background_color;
   color: $color;
@@ -39,6 +39,9 @@ body {
 }
 
 .card_list {
+  display: $card_list_display_mobile;
+  flex-direction: $card_flex_direction_mobile;
+  align-items: $card_align_items_mobile;
   margin: $card_list_margin_mobile;
 }
 .card {
@@ -72,9 +75,9 @@ body {
 //where the fun begins , added fade in and motions
 @media only screen and (min-width: 900px) {
   body {
-    display: $body_display_desktop;
-    flex-direction: $body_flex_direction_desktop;
-    align-items: $body_align_items_desktop;
+    // display: $body_display_desktop;
+    // flex-direction: $body_flex_direction_desktop;
+    // align-items: $body_align_items_desktop;
 
     background-image: $background_image_desktop;
     background-position: center;
@@ -92,7 +95,7 @@ body {
 
     & .name {
       font-size: $heading_header_desktop;
-    }
+    } 
     & .icon {
       float: $icon_float_desktop;
       transform: $icon_transform_desktop;
@@ -100,6 +103,9 @@ body {
   }
 
   .card_list {
+    display: $card_list_display_desktop;
+    flex-direction: $card_flex_direction_desktop;
+    align-items: $card_align_items_desktop;
     margin: $card_list_margin_desktop;
   }
   .card {
