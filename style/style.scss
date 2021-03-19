@@ -1,4 +1,4 @@
-@import "./_variables";
+@use "_variables" as *;
 
 * {
   padding: 0;
@@ -6,19 +6,26 @@
   box-sizing: border-box;
 }
 
-/// mobile first///////////////////////////////////////////////////////
+/// mobile first - normal ///////////////////////////////////////////////////////
 body {
-  background-color: $background_color;
-  color: $color;
   font-family: "Montserrat", sans-serif;
-  display: $body_display_mobile;
-  flex-direction: $body_flex_direction_mobile;
-  align-items: $body_align_items_mobile;
+  color: $color;
+  ///cheat for stupid background image clipping issue
+  background: rgb(159, 0, 112);
+  background: linear-gradient(
+    0deg,
+    rgba(159, 0, 112, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 
+.bg {
+  z-index: 0;
   background-image: $background_image_mobile;
-  background-position: center;
+
   background-repeat: no-repeat;
-  background-origin: content-box;
+  background-size: cover;
+  background-position: center;
 }
 
 .heading {
@@ -74,15 +81,8 @@ body {
 /// desktop ///////////////////////////////////////////////////////
 //where the fun begins , added fade in and motions
 @media only screen and (min-width: 900px) {
-  body {
-    // display: $body_display_desktop;
-    // flex-direction: $body_flex_direction_desktop;
-    // align-items: $body_align_items_desktop;
-
+  .bg {
     background-image: $background_image_desktop;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-origin: content-box;
   }
 
   .heading {
@@ -95,7 +95,7 @@ body {
 
     & .name {
       font-size: $heading_header_desktop;
-    } 
+    }
     & .icon {
       float: $icon_float_desktop;
       transform: $icon_transform_desktop;
@@ -128,7 +128,7 @@ body {
     & .title a {
       font-size: $card_title_desktop;
       padding: $card_heading_padding_desktop;
-      color: #fff;
+      color: $color;
     }
     & .text {
       font-size: $card_text_desktop;
